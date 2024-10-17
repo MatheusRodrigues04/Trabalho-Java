@@ -1,0 +1,18 @@
+const matrizC = [
+    [1, 4],
+    [2, 5],
+    [3, 6]
+];
+
+const matrizD = [
+    [7, 8, 9],
+    [10, 11, 12]
+];
+
+const resultado2 = multiplicarMatrizes(matrizC, matrizD);
+console.log(resultado2); 
+// Saída: [
+//   [ 47, 52, 57 ],
+//   [ 64, 71, 78 ],
+//   [ 81, 90, 99 ]
+// ]
