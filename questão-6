@@ -1,0 +1,8 @@
+function substituirElemento(array, valorAntigo, novoValor) {
+    return array.map(item => (item === valorAntigo ? novoValor : item));
+}
+
+// Exemplo de uso:
+const numeros = [1, 2, 3, 2, 4, 2];
+const resultado = substituirElemento(numeros, 2, 5);
+console.log(resultado); // Saída: [1, 5, 3, 5, 4, 5]
