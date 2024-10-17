@@ -1,0 +1,12 @@
+function ehPalindromo(string) {
+    // Remove espaços e transforma a string em minúsculas
+    const strLimpa = string.replace(/\s+/g, '').toLowerCase();
+    // Verifica se a string limpa é igual à sua reversa
+    const strReversa = strLimpa.split('').reverse().join('');
+    return strLimpa === strReversa;
+}
+
+// Exemplo de uso:
+console.log(ehPalindromo('A man a plan a canal Panama')); // true
+console.log(ehPalindromo('Olá')); // false
+console.log(ehPalindromo('Radar')); // true
